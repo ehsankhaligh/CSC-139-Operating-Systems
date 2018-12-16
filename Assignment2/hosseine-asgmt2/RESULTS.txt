@@ -1,0 +1,98 @@
+./a.out 12 6 8
+producer produced 1431355191
+consumer consumed 1431355191
+producer produced 964899043
+consumer consumed 964899043
+producer produced 150240575
+consumer consumed 150240575
+producer produced 1068432038
+consumer consumed 1068432038
+producer produced 1188903679
+consumer consumed 1188903679
+producer produced 1260217093
+consumer consumed 1260217093
+
+
+./a.out 19 10 9
+producer produced 636708761
+consumer consumed 636708761
+producer produced 2005480717
+consumer consumed 2005480717
+producer produced 1223389481
+producer produced 1970242928
+consumer consumed 1970242928
+producer produced 1762071561
+producer produced 984411720
+producer produced 355103750
+consumer consumed 355103750
+consumer consumed 984411720
+producer produced 1865900
+producer produced 701319238
+producer produced 955604726
+consumer consumed 955604726
+producer produced 257581692
+consumer consumed 257581692
+producer produced 869942976
+consumer consumed 869942976
+consumer consumed 701319238
+producer produced 1222655088
+producer produced 631185153
+consumer consumed 631185153
+consumer consumed 1222655088
+producer produced 196458353
+
+
+./a.out 13 6 6
+producer produced 489035169
+producer produced 1431355191
+consumer consumed 1431355191
+producer produced 964899043
+consumer consumed 964899043
+producer produced 150240575
+consumer consumed 150240575
+producer produced 1068432038
+consumer consumed 1068432038
+producer produced 1188903679
+producer produced 1644948879
+
+./a.out 35 6 6
+producer produced 489035169
+producer produced 1431355191
+consumer consumed 1431355191
+producer produced 964899043
+consumer consumed 964899043
+producer produced 150240575
+consumer consumed 150240575
+producer produced 1068432038
+consumer consumed 1068432038
+producer produced 1188903679
+producer produced 1644948879
+consumer consumed 1644948879
+consumer consumed 1188903679
+consumer consumed 489035169
+producer produced 2039565267
+consumer consumed 2039565267
+producer produced 1814042643
+consumer consumed 1814042643
+producer produced 1663705393
+consumer consumed 1663705393
+producer produced 955604726
+consumer consumed 955604726
+producer produced 257581692
+consumer consumed 257581692
+producer produced 1222655088
+consumer consumed 1222655088
+producer produced 869942976
+producer produced 567710733
+consumer consumed 567710733
+producer produced 2027288670
+consumer consumed 2027288670
+consumer consumed 869942976
+producer produced 1822916704
+consumer consumed 1822916704
+producer produced 2049674277
+consumer consumed 2049674277
+producer produced 475439183
+consumer consumed 475439183
+producer produced 1795536041
+producer produced 879608448

@@ -1,0 +1,80 @@
+//Ehsan Hosseinzadeh Khaligh
+// infomation -> man proc
+
+• What is the CPU type and model?
+cat /proc/cpuinfo
+Intel(R) Xeon(R) CPU E5-2640 0 @ 2.50GHz
+vendor_id     : GenuineIntel
+
+• What version of the Linux kernel is being used?
+cat /proc/version
+Linux version 2.6.32-696.3.2.el6.i686
+
+• How long (in days, hours, and minutes) has it been since the system was last booted?
+wk '{print int($1/86400)":"int(($1%86400)/3600)":"int(($1%3600)/60)}' /proc/uptime
+454:19:10
+
+• How much of the total CPU time has been spent executing in user mode? System mode? Idle?
+cat /proc/stat
+
+USER 1181520484
+system 73120517
+idle 14413006648
+
+Man page description:
+
+Common entries include:
+
+cpu  3357 0 4313 1362393
+
+The amount of time, measured in units of USER_HZ (1/100ths of a second on most architectures,
+use sysconf(_SC_CLK_TCK) to obtain the right value), that the system spent in
+user mode, user mode with low priority (nice), system mode, and the idle task, respectively.
+The last value should be USER_HZ times the second entry in the uptime pseudo-file.
+
+
+• How much memory is configured into it?
+cat /proc/meminfo
+MemTotal:        4019168 kB
+
+• How much memory is currently available on it?
+cat /proc/meminfo
+MemFree:          134960 kB
+
+• How many disks read/write requests have been made?
+cat /proc/diskstats
+
+Reads completed: 51571078 Writes Completed: 58622246
+
+man page description:
+This file contains disk I/O statistics for each disk device.  See the kernel source file Documentation/iostats.txt for further information.
+
+Field  1 -- # of reads completed
+  This is the total number of reads completed successfully.
+Field  5 -- # of writes completed
+  This is the total number of writes completed successfully.
+
+• How many context switches has the kernel performed?
+
+/proc/[pid]/status
+
+Man page description:
+
+Provides much of the information in /proc/[pid]/stat and /proc/[pid]/statm in a format that’s easier for humans to parse.  Here’s an example:  $ cat /proc/$$/status
+
+* voluntary_context_switches, nonvoluntary_context_switches: Number of voluntary and involuntary context switches (since Linux 2.6.23).
+
+Answer:
+voluntary_ctxt_switches:      759
+nonvoluntary_ctxt_switches:   2
+
+• How many processes have been created since the system was booted?
+
+cat /proc/stat
+
+man page descritpn:
+The "processes" line gives the number  of processes and threads created, which
+includes (but  is not limited  to) those  created by  calls to the  fork() and
+clone() system calls.
+
+processes 151467960
